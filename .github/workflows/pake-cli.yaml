@@ -108,7 +108,7 @@ jobs:
         timeout-minutes: 25
         shell: bash
         run: |
-          ARGS=("${{ inputs.url }}" "--name" "${{ inputs.name }}" "--user-agent")
+          ARGS=("${{ inputs.url }}" "--name" "${{ inputs.name }}" "--user-agent" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/19.4 Safari/605.1.15")
 
           if [ -n "${{ inputs.icon }}" ]; then
             ARGS+=("--icon" "${{ inputs.icon }}")
